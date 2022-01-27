@@ -57,7 +57,7 @@ app.use(staffPDF);
 app.use(paymentPDF);
 
 
-const PORT = process.env.PORT || 8000;          //  <-------port for run our server
+const PORT = process.env.PORT || 8000;      //  <-------port for run our server
 const DB_URL = 'mongodb+srv://delight8m:m812345@delight8cluster.ociug.mongodb.net/DelightM8_DB?retryWrites=true&w=majority'  // <--------MONGODB url assign to variable calle DB_URL
 
 mongoose.connect(DB_URL)   // <----------- database connection
@@ -67,6 +67,6 @@ mongoose.connect(DB_URL)   // <----------- database connection
 .catch((err) => console.log('DB Connection ERROR!',err));            // <----------- If database connection is failed
 
 
-app.listen( PORT , () => {
-    console.log(`App is running on ${PORT }`)
+app.listen(PORT, () => {
+    console.log(`App is running on ${PORT}`)
 })// create app listener for run in which port our application is running
