@@ -1,8 +1,8 @@
 {
-  "name": "Backend",
+  "name": "M8 Backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ITP backend",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
