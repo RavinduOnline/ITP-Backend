@@ -24,6 +24,7 @@ const costingPDF  = require('./routes/reports/CostingReport');
 const discountsPDF = require('./routes/reports/Discount_Report');
 const staffPDF  = require('./routes/reports/StaffReport');
 const paymentPDF = require('./routes/reports/PaymentReport');
+const req = require('express/lib/request');
 
 
 app.use(bodyParser.json({   // <-------------- App middleware for body-parser
@@ -66,6 +67,9 @@ mongoose.connect(DB_URL)   // <----------- database connection
 })
 .catch((err) => console.log('DB Connection ERROR!',err));            // <----------- If database connection is failed
 
+app.get('/',(req, res) => {
+res.send('<b>Team M8 ITP Project Backend Connected :)</b>')
+});
 
 app.listen(PORT, () => {
     console.log(`App is running on ${PORT}`)
