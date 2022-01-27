@@ -68,5 +68,5 @@ mongoose.connect(DB_URL)   // <----------- database connection
 
 
 app.listen(process.env.PORT || 8000, () => {
-    console.log(`App is running on ${PORT}`)
+    console.log(`App is running on ${process.env.PORT }`)
 })// create app listener for run in which port our application is running
