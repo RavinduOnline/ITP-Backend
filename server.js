@@ -67,10 +67,11 @@ mongoose.connect(DB_URL)   // <----------- database connection
 })
 .catch((err) => console.log('DB Connection ERROR!',err));            // <----------- If database connection is failed
 
-app.get('/',(req, res) => {
-res.send('<b>Team M8 ITP Project Backend Connected :)</b>')
-});
-
 app.listen(PORT, () => {
     console.log(`App is running on ${PORT}`)
 })// create app listener for run in which port our application is running
+
+
+app.get('/',(req, res) => {
+    res.send('<b>Team M8 ITP Project Backend Connected :)</b>')
+    });
