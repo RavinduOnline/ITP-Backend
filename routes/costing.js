@@ -80,7 +80,7 @@ router.delete('/costing/delete/:id',(req,res)=>{
 });  
 
 
-//get sfecific post
+//get specific post
 
 router.get("/costing/:id",(req,res)=>{
     let postId = req.params.id;
