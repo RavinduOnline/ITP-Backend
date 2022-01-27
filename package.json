@@ -1,5 +1,5 @@
 {
-  "name": "M8 Backend",
+  "name": "M8_Backend",
   "version": "1.0.0",
   "description": "ITP backend",
   "main": "server.js",
