@@ -75,3 +75,5 @@ app.listen(PORT, () => {
 app.get('/',function (req, res){
     res.send('<b>Team M8 ITP Project Backend Connected :)</b>')
     });
+
+app.use('/costing',costingRoutes );
