@@ -62,7 +62,7 @@ const PORT = process.env.PORT || 8000 ;      //  <-------port for run our server
 const DB_URL = 'mongodb+srv://delight8m:m812345@delight8cluster.ociug.mongodb.net/DelightM8_DB?retryWrites=true&w=majority'  // <--------MONGODB url assign to variable calle DB_URL
 
 mongoose.connect(DB_URL)   // <----------- database connection
-.then(() =>{                // <----------- If database connection is succesfull
+.then(() =>{                // <----------- If database connection is successfully
     console.log('DB Connected!')   
 })
 .catch((err) => console.log('DB Connection ERROR!',err));            // <----------- If database connection is failed
