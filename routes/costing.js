@@ -1,5 +1,4 @@
 const express = require ('express');
-const posts = require('../Models/costing');
 const Posts  = require('../Models/costing');
 
 const router = express.Router();
@@ -85,7 +84,7 @@ router.delete('/costing/delete/:id',(req,res)=>{
 router.get("/costing/:id",(req,res)=>{
     let postId = req.params.id;
 
-    posts.findById(postId,(err,post)=>{
+    Posts.findById(postId,(err,post)=>{
         if(err){
             return res.status(400).json({
                 success:false, err

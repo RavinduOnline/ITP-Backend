@@ -73,5 +73,5 @@ app.listen(PORT, () => {
 
 
 app.get('/',function (req, res){
-    res.redirect('/costing');
+    res.send('<b>Team M8 ITP Project Backend Connected :)</b>')
     });
