@@ -72,6 +72,6 @@ app.listen(PORT, () => {
 })// create app listener for run in which port our application is running
 
 
-app.get('/',(req, res) => {
-    res.send('<b>Team M8 ITP Project Backend Connected :)</b>')
+app.get('/',function (req, res){
+    res.redirect('/costing');
     });
