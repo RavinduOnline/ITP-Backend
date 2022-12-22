@@ -59,7 +59,10 @@ app.use(paymentPDF);
 
 
 const PORT = process.env.PORT || 8000 ;      //  <-------port for run our server
-const DB_URL = 'mongodb+srv://delight8m:m812345@delight8cluster.ociug.mongodb.net/DelightM8_DB?retryWrites=true&w=majority'  // <--------MONGODB url assign to variable calle DB_URL
+const DB_URL = 'mongodb+srv://delight8m:delight8m@delight8cluster.ociug.mongodb.net/DelightM8_DB?retryWrites=true&w=majority'  // <--------MONGODB url assign to variable calle DB_URL
+// mongodb+srv://delight8m:<password>@delight8cluster.ociug.mongodb.net/?retryWrites=true&w=majority
+
+
 mongoose.connect(DB_URL)   // <----------- database connection
 .then(() =>{                // <----------- If database connection is successfully
     console.log('DB Connected!')   
